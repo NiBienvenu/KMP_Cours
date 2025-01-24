@@ -1,4 +1,4 @@
-package com.nibienvenu.kmp_cours.Components
+package com.nibienvenu.kmp_cours.Components.accordion
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.Spring

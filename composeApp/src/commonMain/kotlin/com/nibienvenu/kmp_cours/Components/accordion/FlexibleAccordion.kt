@@ -1,4 +1,4 @@
-package com.nibienvenu.kmp_cours.Components
+package com.nibienvenu.kmp_cours.Components.accordion
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.Image
@@ -34,6 +34,7 @@ data class AccordionContent(
     val items: List<String>
 )
 
+
 enum class ContentType {
     TEXT, CHECKBOX, CHIP
 }
@@ -43,27 +44,27 @@ enum class ContentType {
 fun FlexibleAccordion() {
     val accordionItems = listOf(
         AccordionItem(
-            title = "Product Categories",
+            title = "Catégories de Produits",
             content = AccordionContent(
                 type = ContentType.TEXT,
                 items = listOf(
-                    "Electronics", "Fashion", "Home & Kitchen",
-                    "Books", "Sports & Outdoors"
+                    "Électronique", "Mode", "Maison & Cuisine",
+                    "Livres", "Sports & Activités de plein air"
                 )
             )
         ),
         AccordionItem(
-            title = "User Preferences",
+            title = "Préférences Utilisateur",
             content = AccordionContent(
                 type = ContentType.CHECKBOX,
                 items = listOf(
-                    "Dark Mode", "Notifications", "Location Services",
-                    "Language Sync", "Analytics Tracking"
+                    "Mode Sombre", "Notifications", "Services de Localisation",
+                    "Synchronisation de la Langue", "Suivi des Analyses"
                 )
             )
         ),
         AccordionItem(
-            title = "Technology Skills",
+            title = "Compétences Technologiques",
             content = AccordionContent(
                 type = ContentType.CHIP,
                 items = listOf(
@@ -73,27 +74,26 @@ fun FlexibleAccordion() {
             )
         ),
         AccordionItem(
-            title = "Support Resources",
+            title = "Ressources de Support",
             content = AccordionContent(
                 type = ContentType.TEXT,
                 items = listOf(
-                    "Help Center", "Community Forum", "Video Tutorials",
-                    "Technical Support", "User Guides"
+                    "Centre d'Aide", "Forum Communautaire", "Tutoriels Vidéo",
+                    "Support Technique", "Guides Utilisateur"
                 )
             )
         ),
         AccordionItem(
-            title = "Contact Methods",
+            title = "Méthodes de Contact",
             content = AccordionContent(
                 type = ContentType.TEXT,
                 items = listOf(
-                    "Email Support", "Phone Line", "Live Chat",
-                    "Social Media", "Ticket System"
+                    "Support par Email", "Ligne Téléphonique", "Chat en Direct",
+                    "Réseaux Sociaux", "Système de Billets"
                 )
             )
         )
     )
-
     Box(
         modifier = Modifier
             .fillMaxSize()
