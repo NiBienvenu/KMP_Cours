@@ -69,6 +69,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(projects.shared)
+            //implementation("io.github.dead8309:lucide-kotlin:1.0.0")
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
