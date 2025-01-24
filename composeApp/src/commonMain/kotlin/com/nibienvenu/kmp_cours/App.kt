@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.nibienvenu.kmp_cours.Components.Accordion
 import com.nibienvenu.kmp_cours.Components.AccordionItem
+import com.nibienvenu.kmp_cours.Components.FlexibleAccordion
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
@@ -38,7 +39,7 @@ fun App() {
             modifier = Modifier.padding(10.dp)
         ) {
 
-            Accordion()
+            FlexibleAccordion()
         }
     }
 }
