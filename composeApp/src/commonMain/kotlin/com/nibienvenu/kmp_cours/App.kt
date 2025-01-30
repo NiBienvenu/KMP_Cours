@@ -29,6 +29,7 @@ import com.nibienvenu.kmp_cours.Components.BadgeInteractiveExample
 import com.nibienvenu.kmp_cours.Components.BouttonFilled
 import com.nibienvenu.kmp_cours.Components.ElevatedButton
 import com.nibienvenu.kmp_cours.Components.OutlinedButton
+import com.nibienvenu.kmp_cours.Components.TextButtonExample
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -108,7 +109,9 @@ fun App() {
                             println("hello world")
                         }
 
+                        TextButtonExample{
 
+                        }
                     }
                 }
 

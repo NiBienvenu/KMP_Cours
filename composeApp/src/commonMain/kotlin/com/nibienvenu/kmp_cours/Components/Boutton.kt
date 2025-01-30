@@ -3,6 +3,7 @@ package com.nibienvenu.kmp_cours.Components
 import androidx.compose.material.Button
 import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
 
 @Composable
@@ -25,5 +26,14 @@ fun OutlinedButton(onClick : () -> Unit){
 fun ElevatedButton(onClick: () -> Unit, function: @Composable () -> Unit){
     ElevatedButton(onClick = { onClick() }) {
         Text("Elevated")
+    }
+}
+
+@Composable
+fun TextButtonExample(onClick: () -> Unit) {
+    TextButton(
+        onClick = { onClick() }
+    ) {
+        Text("Text Button")
     }
 }
