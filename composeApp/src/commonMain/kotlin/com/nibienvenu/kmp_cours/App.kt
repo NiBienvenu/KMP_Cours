@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.nibienvenu.kmp_cours.Components.BadgeExample
 import com.nibienvenu.kmp_cours.Components.BadgeInteractiveExample
+import com.nibienvenu.kmp_cours.Components.BouttonFilled
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -66,7 +67,9 @@ fun App() {
                     backgroundColor = Color.Green,
                     contentColor = Color.White
                 )
+
             },
+
             floatingActionButton = {
                 var clickCount by remember { mutableStateOf(0) }
                 ExtendedFloatingActionButton(
@@ -92,8 +95,14 @@ fun App() {
                     modifier = Modifier.padding(vertical = 16.dp),
                     horizontalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
-                    BadgeExample()
-                    BadgeInteractiveExample()
+//                    BadgeExample()
+//                    BadgeInteractiveExample()
+                    Column(
+                        modifier = Modifier.padding(vertical = 16.dp)
+                    ){
+
+                        BouttonFilled()
+                    }
                 }
 
             }
