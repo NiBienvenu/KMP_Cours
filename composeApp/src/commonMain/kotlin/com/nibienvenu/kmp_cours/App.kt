@@ -27,6 +27,8 @@ import androidx.compose.ui.unit.dp
 import com.nibienvenu.kmp_cours.Components.BadgeExample
 import com.nibienvenu.kmp_cours.Components.BadgeInteractiveExample
 import com.nibienvenu.kmp_cours.Components.BouttonFilled
+import com.nibienvenu.kmp_cours.Components.ElevatedButton
+import com.nibienvenu.kmp_cours.Components.OutlinedButton
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -102,6 +104,11 @@ fun App() {
                     ){
 
                         BouttonFilled()
+                        OutlinedButton {
+                            println("hello world")
+                        }
+
+
                     }
                 }
 
@@ -111,4 +118,5 @@ fun App() {
         }
     }
 }
+
 

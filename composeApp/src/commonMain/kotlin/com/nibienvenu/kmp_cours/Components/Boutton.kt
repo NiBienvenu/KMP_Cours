@@ -1,10 +1,9 @@
 package com.nibienvenu.kmp_cours.Components
 
 import androidx.compose.material.Button
-import androidx.compose.material.Colors
+import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.ComposeCompilerApi
 
 @Composable
 fun BouttonFilled(){
@@ -16,6 +15,15 @@ fun BouttonFilled(){
 }
 
 @Composable
-fun ButtonFilledTonal(){
+fun OutlinedButton(onClick : () -> Unit){
+    OutlinedButton(onClick = { onClick() }) {
+        Text("Décrite")
+    }
+}
 
+@Composable
+fun ElevatedButton(onClick: () -> Unit, function: @Composable () -> Unit){
+    ElevatedButton(onClick = { onClick() }) {
+        Text("Elevated")
+    }
 }
