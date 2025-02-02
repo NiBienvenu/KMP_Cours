@@ -50,7 +50,6 @@ fun App() {
                 message = "Snackbar number $count",
                 actionLabel = "Action"
             )
-
             when (result) {
                 SnackbarResult.ActionPerformed -> {
                     // Handle action performed
@@ -87,7 +86,6 @@ fun App() {
                 SnackbarHost(hostState = snackbarHostState)
             },
         ) { innerPadding ->
-
             Box(
                 modifier = Modifier
                    .padding(10.dp)
